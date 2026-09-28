@@ -1,0 +1,47 @@
+#lista-produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#lista-produtos > div {
+    background-color: white;
+    width: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+
+    /* impede conteúdo de estourar o card */
+    overflow: hidden;
+}
+
+/* IMAGEM DO PRODUTO */
+#lista-produtos img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Nome */
+#lista-produtos h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+/* Textos */
+#lista-produtos p {
+    color: #666;
+}
+
+/* Preço */
+#lista-produtos p:last-child {
+    color: green;
+    font-weight: bold;
+    font-size: 18px;
+}
